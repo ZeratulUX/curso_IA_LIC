@@ -1,0 +1,28 @@
+# Cueva 4x4 diseñada para el ejercicio 1.
+# (1, 1) es la esquina inferior izquierda.
+
+grid:
+  width: 4
+  height: 4
+
+agent:
+  start: [1, 1]
+  direction: east
+  arrows: 1
+
+wumpus: [4, 4]
+
+pits:
+  - [4, 1]
+  - [4, 3]
+  - [2, 4]
+
+gold: [2, 2]
+
+scoring:
+  gold: 1000
+  death: -1000
+  step: -1
+  shoot: -10
+
+max_steps: 200
