@@ -59,7 +59,7 @@ Original                       Modificado
 ### Silueta
 ![Silueta original y modificada](figuras/comparacion_silueta.png)
 
-Las gráficas comparativas muestran todos los valores y amplían k = 3,…,9 en el codo. Las figuras iniciales de la notebook conservan los límites y la flecha fija de la fuente; esa flecha no calcula el codo. Los ocho PNG individuales están en `figuras/`.
+Los cuatro pares comparativos muestran el antes y el después. La gráfica del codo amplía k = 3,…,9. Las figuras iniciales de la notebook conservan los límites y la flecha fija de la fuente; esa flecha no calcula el codo.
 
 ## Reproducibilidad y ejecución
 
@@ -67,7 +67,6 @@ Las gráficas comparativas muestran todos los valores y amplían k = 3,…,9 en 
 - Python 3.13.16; NumPy 2.1.3; scikit-learn 1.6.1; Matplotlib 3.10.0.
 - Fecha UTC de ejecución: 2026-10-15T01:52:18.451312+00:00.
 - La notebook conserva las celdas originales y añade esta comparación después de la sección de la imagen. Regenera `X` desde `make_blobs` para evitar usar los píxeles de la catarina.
-- `metricas.json` incluye parámetros, centros, versiones y huellas de los datos. `resultados.csv` contiene las 18 inercias y 16 siluetas.
 - Las aserciones comprueban 2000 puntos, 5 centros, 400 muestras por nube, residuos gaussianos iguales y parámetros iguales entre escenarios.
 - La captura del entorno se entrega en `evidencias/`. La notebook `.ipynb` conserva las salidas ejecutadas.
 
@@ -81,4 +80,4 @@ La captura muestra la notebook, la conexión a la máquina de Colab y la tabla o
 
 ![Ejecución y resultados en Google Colab](evidencias/01_colab_resultados.png)
 
-Para repetir únicamente la comparación en un entorno local con estas dependencias: `python experimento.py`. Para volver a ejecutar todas las secciones, abre la notebook en Colab y selecciona **Entorno de ejecución → Ejecutar todas**. El script local indica su propio entorno y no reemplaza la evidencia de la corrida entregada.
+Para volver a ejecutar todas las secciones, abre la notebook en Colab y selecciona **Entorno de ejecución → Ejecutar todas**.
